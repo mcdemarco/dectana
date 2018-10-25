@@ -7,15 +7,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   viewBox="147.41 25.655 47.11 62.89"
-   width="45.208"
-   height="63.291"
+   viewBox="147.4 25.36 110 63.339"
+   width="111"
+   height="66"
    version="1.1"
-   id="svg838"
-   sodipodi:docname="card.svg"
+   id="svg16"
+   sodipodi:docname="move_to_wasteland.svg"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06">
   <metadata
-     id="metadata844">
+     id="metadata22">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -27,7 +27,7 @@
     </rdf:RDF>
   </metadata>
   <defs
-     id="defs842" />
+     id="defs20" />
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -37,20 +37,19 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="738"
-     inkscape:window-height="480"
-     id="namedview840"
+     inkscape:window-width="1232"
+     inkscape:window-height="505"
+     id="namedview18"
      showgrid="false"
-     viewbox-width="47.11"
-     viewbox-x="147.41"
-     viewbox-height="62.89"
-     inkscape:zoom="3.7288082"
-     inkscape:cx="22.604"
-     inkscape:cy="31.6455"
+     viewbox-x="147.4"
+     viewbox-y="25.36"
+     inkscape:zoom="2.9189189"
+     inkscape:cx="55.5"
+     inkscape:cy="33"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg838" />
+     inkscape:current-layer="svg16" />
   <g
      id="g3387"
      transform="translate(-186.3817,-309.80225)">
@@ -112,4 +111,22 @@
        id="text3347"
        inkscape:connector-curvature="0" />
   </g>
+  <g
+     id="g2636"
+     transform="rotate(180,176.69701,190.27081)">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:8, 1;stroke-dashoffset:7.26000023;stroke-opacity:1"
+       id="rect2638"
+       width="45.208172"
+       height="63.291439"
+       x="96.665039"
+       y="291.5481"
+       ry="2.0803924"
+       rx="2.0803924" />
+  </g>
+  <text
+     x="193.918"
+     y="64.158997"
+     style="font-size:24px;white-space:pre;fill:#333333"
+     id="text14">↝</text>
 </svg>

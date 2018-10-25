@@ -18,17 +18,19 @@
 			<div class="wrapper">
 				<table>
 					<tr>
-						<th>Pyramid power</th>
 						<th></th>
+						<th colspan="2">Pyramid power</th>
 						<th>Suit</th>
 						<th></th>
-						<th>Card power</th>
+						<th colspan="2">Card power</th>
 					</tr>
 					<tr v-for="(suit, index) in suits" :class="suit">
-						<td>{{summaries[index].pyramid[0]}}</td>
 						<td><img :src="'css/' + summaries[index].pyramid[1] + '_right.png'" /></td>
+						<td>{{summaries[index].pyramid[0]}}</td>
+						<td><img :src="'css/' + summaries[index].pyramid[2]" /></td>
 						<td><img class="suited" :src="'css/' + suit + '.png'" /></td>
-						<td><img :src="'css/' + summaries[index].card[1] + '_left.png'" /></td>
+						<td><img :src="'css/' + summaries[index].card[1] + '_right.png'" /></td>
+						<td><img :src="'css/' + summaries[index].card[2]" /></td>
 						<td>{{summaries[index].card[0]}}</td>
 					</tr>
 				</table>
@@ -100,28 +102,28 @@
 				 suits: ['suns','leaves','waves','moons','wyrms','knots'],
 				 summaries: [
 					 {
-						 pyramid: ["Create small pyramid where you have an upright pyramid","upright"],
-						 card: ["Create new territory in wasteland from top of deck","flat"]
+						 pyramid: ["Create small pyramid where you have an upright pyramid","upright","plus_upright_1.png"],
+						 card: ["Create new territory in wasteland from top of deck","flat","deck_to_wasteland.svg"]
 					 },
 					 {
-						 pyramid: ["Grow upright pyramid exactly one size larger","upright"],
-						 card: ["Improve empty territory using higher value card from hand","flat"]
+						 pyramid: ["Grow upright pyramid exactly one size larger","upright","grow_upright.png"],
+						 card: ["Improve empty territory using higher value card from hand","flat","hand_to_wasteland.svg"]
 					 },
 					 {
-						 pyramid: ["Move a flat pyramid, up to pip count","flat"],
-						 card: ["Move empty territory in pointed direction to nearest wasteland","flat"]
+						 pyramid: ["Move a flat pyramid, up to pip count","flat","flat_right_move.png"],
+						 card: ["Move empty territory in pointed direction to nearest wasteland","flat","move_to_wasteland.svg"]
 					 },
 					 {
-						 pyramid: ["Push rival pyramids, up to pip count","flat"],
-						 card: ["Take empty territory into hand","flat"]
+						 pyramid: ["Push rival pyramids, up to pip count","flat","push_enemy.png"],
+						 card: ["Take empty territory into hand","flat","card_to_hand.svg"]
 					 },
 					 {
-						 pyramid: ["Shrink rival pyramids, up to pip count","flat"],
-						 card: ["Destroy top card in empty territory","flat"]
+						 pyramid: ["Shrink rival pyramids, up to pip count","flat","shrink_enemy.png"],
+						 card: ["Destroy top card in empty territory","flat","trash_card.svg"]
 					 },
 					 {
-						 pyramid: ["Draw cards equal to upright pyramid's pip count","upright"],
-						 card: ["Draw cards equal to territory value, then sacrifice pyramid and territory","flat"]
+						 pyramid: ["Draw cards equal to upright pyramid's pip count","upright","deck.svg"],
+						 card: ["Draw cards equal to territory value, then sacrifice pyramid and territory","flat","deck.svg"]
 					 }
 				 ],
 				 terminology: false
