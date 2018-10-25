@@ -154,9 +154,14 @@ table td {
 .suns td { background-color: #FF8000; }
 .leaves td { background-color: #9C6630; }
 .waves td { background-color: #66CCFF; }
-.moons td { background-color: #808080; }
+.moons td { background-color: #a0a0a0; }
 .wyrms td { background-color: lightgreen; }
 .knots td { background-color: #FFFF66; }
+
+td.nowrap {
+    white-space:nowrap;
+    vertical-align:middle;
+}
 
 /* mobile */
 
