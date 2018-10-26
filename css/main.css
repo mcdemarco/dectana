@@ -34,7 +34,7 @@ body {
 }
 
 div.wrapper, div.rules {
-    background-color: rgba(195,134,82,0.75);
+    background-color: rgba(183,138,106,0.75); /*195,134,82,0.75);*/
     padding: 3%;
     margin: 1% 10%;
     height:auto;
@@ -44,8 +44,11 @@ div.wrapper {
     font-size: large;
     text-align:center;
 }
+div.wrapper p {
+    font-size: medium;
+}
 
-h1, h2, h3, h4, h5, h6, strong, label {
+h1, h2, h3, h4, h5, h6, th, strong, label {
     font-family: 'Fortune Letters', Futura, Geneva, sans-serif;
 }
 
@@ -53,8 +56,11 @@ h1, h2, h3 {
     text-align:center;
 }
 
+h1 {
+    color: #DFC7B6;
+}
+
 h2, h3 {
-    margin-top: 0;
     padding-top: 0;
 }
 
@@ -146,21 +152,48 @@ p.detail {
 
 table td {
     font-size: smaller;
-    border: 1px solid rgb(195,134,82);
+    border: 3px solid rgba(183,138,106,0.75);
     border-radius: 5px;
-    background-color: rgb(195,134,82);
+    background-color: rgba(183,138,106,0.75);
 }
 
-.suns td { background-color: #FF8000; }
-.leaves td { background-color: #9C6630; }
-.waves td { background-color: #66CCFF; }
-.moons td { background-color: #a0a0a0; }
-.wyrms td { background-color: lightgreen; }
-.knots td { background-color: #FFFF66; }
+.suns td {
+    background-color: #FF8000;
+    border-color: #FF8000;
+}
+.leaves td { 
+    background-color: #9C6630; 
+    border-color: #9C6630; 
+}
+.waves td { 
+    background-color: #66CCFF;
+    border-color: #66CCFF;
+}
+.moons td {
+    background-color: #a0a0a0;
+    border-color: #a0a0a0;
+}
+.wyrms td {
+    background-color: lightgreen;
+    border-color: lightgreen;
+}
+.knots td {
+    background-color: #FFFF66;
+    border-color: #FFFF66;
+}
 
 td.nowrap {
     white-space:nowrap;
     vertical-align:middle;
+}
+
+td.backdrop {
+    width:50px;
+    padding:0 5px 0 5px;
+    background-color:#FCF7F5; 
+}
+td.backdrop img {
+    vertical-align: middle;
 }
 
 /* mobile */

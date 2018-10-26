@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html manifest="dectana.appcache">
 	<head>
 		<title>Dectana Deciphered</title>
 		<meta name="mobile-web-app-capable" content="yes"/>
@@ -27,14 +27,14 @@
 					<tr v-for="(suit, index) in suits" :class="suit">
 						<td><img :src="'css/' + summaries[index].pyramid[1] + '_right.png'" /></td>
 						<td>{{summaries[index].pyramid[0]}}</td>
-						<td><img :src="'css/' + summaries[index].pyramid[2]" /></td>
+						<td class="backdrop"><img :src="'css/' + summaries[index].pyramid[2]" /></td>
 						<td><img class="suited" :src="'css/' + suit + '.png'" /></td>
-						<td><img :src="'css/' + summaries[index].card[1] + '_right.png'" /></td>
-						<td><img :src="'css/' + summaries[index].card[2]" /></td>
+						<td class="backdrop"><img :src="'css/' + summaries[index].card[2]" /></td>
 						<td>{{summaries[index].card[0]}}</td>
+						<td><img :src="'css/' + summaries[index].card[1] + '_right.png'" /></td>
 					</tr>
 				</table>
-				<p>Unless specified otherwise (<em>e.g.,</em> the upright cases), your pyramid must be pointing directly at an adjacent target pyramid or card to affect it.</p>
+				<p>Unless specified otherwise (<em>e.g.,</em> the upright cases), your pyramid must be pointing directly at an adjacent pyramid or space to affect it.</p>
 			</div>
 			<div class="footer">
 				<p>
@@ -107,7 +107,7 @@
 					 },
 					 {
 						 pyramid: ["Grow upright pyramid exactly one size larger","upright","grow_upright.png"],
-						 card: ["Improve empty territory using higher value card from hand","flat","hand_to_wasteland.svg"]
+						 card: ["Improve empty territory using higher value card from hand","flat","hand_to_territory.svg"]
 					 },
 					 {
 						 pyramid: ["Move a flat pyramid, up to pip count","flat","flat_right_move.png"],
@@ -123,7 +123,7 @@
 					 },
 					 {
 						 pyramid: ["Draw cards equal to upright pyramid's pip count","upright","deck.svg"],
-						 card: ["Draw cards equal to territory value, then sacrifice pyramid and territory","flat","deck.svg"]
+						 card: ["Draw cards equal to territory value, then sacrifice pyramid and territory","flat_trash","draw_and_trash.svg"]
 					 }
 				 ],
 				 terminology: false
