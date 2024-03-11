@@ -54,9 +54,11 @@ h1, h2, h3, h4, h5, h6, th, strong, label {
 
 h1, h2, h3 {
     text-align:center;
+    color: #5D3817;
 }
 
-h1 {
+h1,
+.footer h2 {
     color: #DFC7B6;
 }
 
