@@ -1,4 +1,4 @@
-﻿/* Styles for Magnate Roller by M. C. DeMarco.
+﻿/* Styles for Dectana Deciphered by M. C. DeMarco.
    Background pattern from subtlepatterns.com */
 
 /* basics */
@@ -141,6 +141,10 @@ img.suited {
 div.footer cite {
     display:block;
     font-size:smaller;
+}
+
+div.footer p {
+    color: #DFC7B6;
 }
 
 ul, ol {
