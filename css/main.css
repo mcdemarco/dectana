@@ -138,14 +138,22 @@ img.suited {
     border-radius: 50%;
 }
 
-div.footer cite {
-    display:block;
-    font-size:smaller;
-}
-
 div.footer p {
     color: #DFC7B6;
 }
+
+div.footer cite {
+    display:block;
+    font-size:smaller;
+    color: #DFC7B6;
+}
+
+div.footer a, 
+div.footer a:visited, 
+div.footer a:hover {
+    color: antiquewhite;
+}
+
 
 ul, ol {
     line-height:1.5;
